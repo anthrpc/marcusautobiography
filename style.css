@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+        font-family: 'Poppins', sans-serif;
+        background-color: #0c192c;
+        color: #fff;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.text {
+    text-align: center;
+}
+
+.text {
+    text-align: left;
+    padding-left: 600px;
+    padding-top: 50px;
+    color: #EAEAEA;
+}
+
+.text2 {
+    text-align: right;
+    padding-right: 600px;
+    color: #EAEAEA;
+}
+
+.text3 {
+    text-align: center;
+    text-transform: capitalize;
+    color: #EAEAEA;
+    font-weight: bold;
+}
+
+.text4 {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: dashed;
+}
+
+.logo {
+    font-size: 28px;
+    color: #FF2E63;
+}
+
+span {
+    color: #EAEAEA;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color: #EAEAEA;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #FF2E63;
+    filter: blur(0.5px);
+    transition-duration: 1200ms;
+}
+
+section{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%) ;
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.logos{
+    display: flex;
+}
+
+.logo:nth-child(2){
+    transition-delay: 200ms;
+}
+
+.logo:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+.logo:nth-child(4) {
+    transition-delay: 600ms;
+}
+
+.logo:nth-child(5) {
+    transition-delay: 800ms;
+}
+
+.logo:nth-child(6) {
+    transition-delay: 1000ms;
+}
+
+.logo:nth-child(9) {
+    transition-delay: 1200ms;
+}
